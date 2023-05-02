@@ -12,7 +12,7 @@ public class BuffedRecarm06 : MelonMod
 {
     private static bool usingRecarm; // Is true when the last used skill/item during battle was Recarm/Revival Bead
 
-    // After apply a skill effect outside of battle
+    // After applying a skill effect outside of battle
     [HarmonyPatch(typeof(datCalc), nameof(datCalc.datExecSkill))]
     private class Patch
     {
